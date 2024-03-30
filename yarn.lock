@@ -1066,25 +1066,25 @@
   resolved "https://registry.yarnpkg.com/@bitauth/libauth/-/libauth-1.19.0.tgz#61193fb44d95ececd195a4feadfce0b0ba9f981d"
   integrity sha512-UtfCijrCcPCQdstlxiv29hBNuYs/1hqeDMgS6CPjxps7r7/y/0p9TRGDx65fczlO12Pa5rQdWO/GzwsXo03uIg==
 
-"@boneswapfi/core@0.0.4":
+"@mateswapfi/core@0.0.4":
   version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@boneswapfi/core/-/core-0.0.4.tgz#5be0e3550993c3894de60ae4cdac216fbcb6d2fa"
+  resolved "https://registry.yarnpkg.com/@mateswapfi/core/-/core-0.0.4.tgz#5be0e3550993c3894de60ae4cdac216fbcb6d2fa"
   integrity sha512-fONgjPpU4Plh8aOxly1S08vfPv6g9SbDwny5jDp9IaRV0QjNOuOUYjaPTIXJaKdtm7oD7Ilejj7+thuxrRfiCA==
   dependencies:
     eip-712 "^0.4.3"
 
-"@boneswapfi/default-token-list@0.0.7":
+"@mateswapfi/default-token-list@0.0.7":
   version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@boneswapfi/default-token-list/-/default-token-list-0.0.7.tgz#ebde6d1c3811699e278445ab0293448940967b1b"
+  resolved "https://registry.yarnpkg.com/@mateswapfi/default-token-list/-/default-token-list-0.0.7.tgz#ebde6d1c3811699e278445ab0293448940967b1b"
   integrity sha512-+9Zhf7gep0QZJqC4IRr9mSsX+Whl888HxqywIcvS5oLyFGZv8sbbx7yUkBwZOrMU9ykDzHNvlf2KirLunNjyFQ==
   dependencies:
     commitlint "^13.1.0"
     lint-staged "^11.1.2"
     yarn "^1.22.19"
 
-"@boneswapfi/sdk@^0.0.21":
+"@mateswapfi/sdk@^0.0.21":
   version "0.0.21"
-  resolved "https://registry.yarnpkg.com/@boneswapfi/sdk/-/sdk-0.0.21.tgz#3820e7b0b67faa28030ce3012cffcc87529243c5"
+  resolved "https://registry.yarnpkg.com/@mateswapfi/sdk/-/sdk-0.0.21.tgz#3820e7b0b67faa28030ce3012cffcc87529243c5"
   integrity sha512-rJt2aewprTVIz3mm7eyKbBAi/PwbdezsfNExFryXATxnmoaoaa2+FwHogK5tlnl1LycaQZuPilbubynVBBteiA==
   dependencies:
     big.js "^6.1.0"

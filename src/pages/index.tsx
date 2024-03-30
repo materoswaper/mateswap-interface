@@ -5,7 +5,7 @@ export default function Dashboard() {
   return (
     <Container id="dashboard-page" className="py-4 md:py-8 lg:py-12" maxWidth="2xl">
       <Head>
-        <title>Dashboard | BoneSwap</title>
+        <title>Dashboard | MateSwap</title>
         <meta name="description" content="Bone" />
       </Head>
     </Container>

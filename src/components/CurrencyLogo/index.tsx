@@ -1,4 +1,4 @@
-import { ChainId, Currency, WNATIVE } from '@boneswapfi/sdk'
+import { ChainId, Currency, WNATIVE } from '@mateswapfi/sdk'
 import React, { FunctionComponent, useMemo } from 'react'
 
 import Logo from '../Logo'
@@ -6,12 +6,12 @@ import { WrappedTokenInfo } from '../../state/lists/wrappedTokenInfo'
 import useHttpLocations from '../../hooks/useHttpLocations'
 
 const BLOCKCHAIN = {
-  [ChainId.DOGECHAIN]: 'dogechain',
-  [ChainId.DOGECHAIN_TESTNET]: 'dogechain-testnet',
+  [ChainId.LACCHAIN]: 'dogechain',
+  [ChainId.LACCHAIN_TESTNET]: 'dogechain-testnet',
 }
 
 function getCurrencySymbol(currency) {
-  if (currency.symbol === 'WWDOGE') {
+  if (currency.symbol === 'WLAC') {
     return 'doge'
   }
   return currency.symbol.toLowerCase()
@@ -40,8 +40,8 @@ export function getCurrencyLogoUrls(currency) {
 const DogeLogo = 'https://raw.githubusercontent.com/boneswap-fi/icons/master/token/doge.png'
 
 const LOGO: { readonly [chainId in ChainId]?: string } = {
-  [ChainId.DOGECHAIN]: DogeLogo,
-  [ChainId.DOGECHAIN_TESTNET]: DogeLogo,
+  [ChainId.LACCHAIN]: DogeLogo,
+  [ChainId.LACCHAIN_TESTNET]: DogeLogo,
 }
 
 interface CurrencyLogoProps {

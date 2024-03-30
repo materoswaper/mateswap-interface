@@ -1,8 +1,8 @@
-import { ChainId } from '@boneswapfi/sdk'
+import { ChainId } from '@mateswapfi/sdk'
 
 const config = {
-  [ChainId.DOGECHAIN]: {},
-  [ChainId.DOGECHAIN_TESTNET]: {},
+  [ChainId.LACCHAIN]: {},
+  [ChainId.LACCHAIN_TESTNET]: {},
 }
 
 export default config

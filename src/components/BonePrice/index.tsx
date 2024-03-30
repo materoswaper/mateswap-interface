@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react'
-import { USDT, BONE } from '../../config/tokens'
+import { USDT, MATE } from '../../config/tokens'
 import { useV2TradeExactIn as useTradeExactIn } from '../../hooks/useV2Trades'
 import { tryParseAmount } from '../../functions/parse'
-import { ChainId } from '@boneswapfi/sdk'
+import { ChainId } from '@mateswapfi/sdk'
 import axios from 'axios'
 
 const BonePrice = () => {
   const [price, setPrice] = useState(null)
-  const parsedAmount = tryParseAmount('1', BONE[ChainId.DOGECHAIN])
-  const bestTradeExactIn = useTradeExactIn(parsedAmount, USDT[ChainId.DOGECHAIN])
+  const parsedAmount = tryParseAmount('1', MATE[ChainId.LACCHAIN])
+  const bestTradeExactIn = useTradeExactIn(parsedAmount, USDT[ChainId.LACCHAIN])
 
   // axios.get('https://api.coingecko.com/api/v3/simple/price?ids=boneswap&vs_currencies=usd')
   // .then(response => {

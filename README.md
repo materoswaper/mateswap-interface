@@ -1,6 +1,6 @@
-# BoneSwap Interface
+# MateSwap Interface
 
-BoneSwap Interface is a progressive web application for the BoneSwap Protocol.
+MateSwap Interface is a progressive web application for the MateSwap Protocol.
 
 ## Getting started
 

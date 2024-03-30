@@ -1,4 +1,4 @@
-import { ChainId } from '@boneswapfi/sdk'
+import { ChainId } from '@mateswapfi/sdk'
 
 // Multichain Explorer
 const builders = {
@@ -30,11 +30,11 @@ interface ChainObject {
 }
 
 const chains: ChainObject = {
-  [ChainId.DOGECHAIN]: {
+  [ChainId.LACCHAIN]: {
     chainName: '',
     builder: builders.dogechain_explorer,
   },
-  [ChainId.DOGECHAIN_TESTNET]: {
+  [ChainId.LACCHAIN_TESTNET]: {
     chainName: 'testnet',
     builder: builders.dogechain_explorer_testnet,
   },

@@ -1,6 +1,6 @@
 import { AppState } from '..'
-import { ChainId } from '@boneswapfi/sdk'
-import DEFAULT_TOKEN_LIST from '@boneswapfi/default-token-list'
+import { ChainId } from '@mateswapfi/sdk'
+import DEFAULT_TOKEN_LIST from '@mateswapfi/default-token-list'
 import { TokenList } from '@uniswap/token-lists'
 import { UNSUPPORTED_LIST_URLS } from '../../config/token-lists'
 import UNSUPPORTED_TOKEN_LIST from '../../constants/token-lists/boneswap-v2-unsupported.tokenlist.json'
@@ -51,8 +51,8 @@ export function useAllLists(): AppState['lists']['byUrl'] {
 
 function combineMaps(map1: TokenAddressMap, map2: TokenAddressMap): TokenAddressMap {
   return {
-    [ChainId.DOGECHAIN]: { ...map1[ChainId.DOGECHAIN], ...map2[ChainId.DOGECHAIN] },
-    [ChainId.DOGECHAIN_TESTNET]: { ...map1[ChainId.DOGECHAIN_TESTNET], ...map2[ChainId.DOGECHAIN_TESTNET] },
+    [ChainId.LACCHAIN]: { ...map1[ChainId.LACCHAIN], ...map2[ChainId.LACCHAIN] },
+    [ChainId.LACCHAIN_TESTNET]: { ...map1[ChainId.LACCHAIN_TESTNET], ...map2[ChainId.LACCHAIN_TESTNET] },
   }
 }
 

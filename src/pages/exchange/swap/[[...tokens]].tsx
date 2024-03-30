@@ -6,7 +6,7 @@ import {
   Token,
   TradeType,
   Trade as V2Trade,
-} from '@boneswapfi/sdk'
+} from '@mateswapfi/sdk'
 import { ApprovalState, useApproveCallbackFromTrade } from '../../../hooks/useApproveCallback'
 import { ArrowWrapper, BottomGrouping, SwapCallbackError } from '../../../features/exchange-v1/swap/styleds'
 import { ButtonConfirmed, ButtonError } from '../../../components/Button'
@@ -438,12 +438,12 @@ export default function Swap() {
   return (
     <Container id="swap-page" className="py-4 md:py-8 lg:py-12">
       <Head>
-        <title>{i18n._(t`BoneSwap`)} | BoneSwap</title>
-        {/* <title>{GetRateText({price: trade?.executionPrice, showInverted}) || i18n._(t`BoneSwap`)} | BoneSwap</title> */}
+        <title>{i18n._(t`MateSwap`)} | MateSwap</title>
+        {/* <title>{GetRateText({price: trade?.executionPrice, showInverted}) || i18n._(t`MateSwap`)} | MateSwap</title> */}
         <meta
           key="description"
           name="description"
-          content="BoneSwap allows for swapping of ERC20 compatible tokens"
+          content="MateSwap allows for swapping of ERC20 compatible tokens"
         />
       </Head>
       <TokenWarningModal

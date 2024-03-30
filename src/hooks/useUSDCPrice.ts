@@ -1,17 +1,17 @@
-import { ChainId, Currency, CurrencyAmount, Price, Token } from '@boneswapfi/sdk'
+import { ChainId, Currency, CurrencyAmount, Price, Token } from '@mateswapfi/sdk'
 
 import { useActiveWeb3React } from '../hooks/useActiveWeb3React'
 import { useMemo } from 'react'
 import { useV2TradeExactOut } from './useV2Trades'
-import { USDT } from '@boneswapfi/sdk'
+import { USDT } from '@mateswapfi/sdk'
 
 // import { wrappedCurrency } from "../functions/currency/wrappedCurrency";
 
 // Stablecoin amounts used when calculating spot price for a given currency.
 // The amount is large enough to filter low liquidity pairs.
 const STABLECOIN_AMOUNT_OUT: { [chainId: number]: CurrencyAmount<Token> } = {
-  // [ChainId.DOGECHAIN]: CurrencyAmount.fromRawAmount(USDT[ChainId.DOGECHAIN], 100_000e6),
-  [ChainId.DOGECHAIN_TESTNET]: CurrencyAmount.fromRawAmount(USDT[ChainId.DOGECHAIN_TESTNET], 100_000e6),
+  // [ChainId.LACCHAIN]: CurrencyAmount.fromRawAmount(USDT[ChainId.LACCHAIN], 100_000e6),
+  [ChainId.LACCHAIN_TESTNET]: CurrencyAmount.fromRawAmount(USDT[ChainId.LACCHAIN_TESTNET], 100_000e6),
 }
 
 /**

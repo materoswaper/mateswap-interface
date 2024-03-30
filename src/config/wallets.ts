@@ -1,11 +1,11 @@
 import { AbstractConnector } from '@web3-react/abstract-connector'
-import { ChainId } from '@boneswapfi/sdk'
+import { ChainId } from '@mateswapfi/sdk'
 import { InjectedConnector } from '@web3-react/injected-connector'
 import { NetworkConnector } from '../entities/NetworkConnector'
 import RPC from './rpc'
 
 export const network = new NetworkConnector({
-  defaultChainId: ChainId.DOGECHAIN,
+  defaultChainId: ChainId.LACCHAIN,
   urls: RPC,
 })
 
@@ -53,8 +53,8 @@ export const SUPPORTED_WALLETS: { [key: string]: WalletInfo } = {
         bridge: 'https://bridge.walletconnect.org',
         qrcode: true,
         supportedChainIds: [
-          ChainId.DOGECHAIN,
-          ChainId.DOGECHAIN_TESTNET,
+          ChainId.LACCHAIN,
+          ChainId.LACCHAIN_TESTNET,
         ],
         chainId: network.provider.chainId
       })
@@ -71,8 +71,8 @@ export const SUPPORTED_WALLETS: { [key: string]: WalletInfo } = {
     connector: async () => {
       const KeystoneConnector = (await import('@keystonehq/keystone-connector')).KeystoneConnector
       return new KeystoneConnector({
-        chainId: ChainId.DOGECHAIN,
-        url: RPC[ChainId.DOGECHAIN],
+        chainId: ChainId.LACCHAIN,
+        url: RPC[ChainId.LACCHAIN],
       })
     },
     name: 'Keystone',
@@ -86,9 +86,9 @@ export const SUPPORTED_WALLETS: { [key: string]: WalletInfo } = {
     connector: async () => {
       const LatticeConnector = (await import('@web3-react/lattice-connector')).LatticeConnector
       return new LatticeConnector({
-        chainId: ChainId.DOGECHAIN,
-        url: RPC[ChainId.DOGECHAIN],
-        appName: 'BoneSwap',
+        chainId: ChainId.LACCHAIN,
+        url: RPC[ChainId.LACCHAIN],
+        appName: 'MateSwap',
       })
     },
     name: 'Lattice',
@@ -102,8 +102,8 @@ export const SUPPORTED_WALLETS: { [key: string]: WalletInfo } = {
     connector: async () => {
       const WalletLinkConnector = (await import('@web3-react/walletlink-connector')).WalletLinkConnector
       return new WalletLinkConnector({
-        url: RPC[ChainId.DOGECHAIN],
-        appName: 'BoneSwap',
+        url: RPC[ChainId.LACCHAIN],
+        appName: 'MateSwap',
         appLogoUrl: 'https://raw.githubusercontent.com/boneswap-fi/art/master/sushi/logo-256x256.png',
       })
     },
@@ -142,7 +142,7 @@ export const SUPPORTED_WALLETS: { [key: string]: WalletInfo } = {
       const PortisConnector = (await import('@web3-react/portis-connector')).PortisConnector
       return new PortisConnector({
         dAppId: process.env.NEXT_PUBLIC_PORTIS_ID ?? '',
-        networks: [ChainId.DOGECHAIN],
+        networks: [ChainId.LACCHAIN],
       })
     },
     name: 'Portis',
@@ -156,7 +156,7 @@ export const SUPPORTED_WALLETS: { [key: string]: WalletInfo } = {
     connector: async () => {
       const TorusConnector = (await import('@web3-react/torus-connector')).TorusConnector
       return new TorusConnector({
-        chainId: ChainId.DOGECHAIN,
+        chainId: ChainId.LACCHAIN,
       })
     },
     name: 'Torus',

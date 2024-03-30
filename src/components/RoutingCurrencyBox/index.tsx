@@ -1,7 +1,7 @@
 import { FC } from "react";
 import CurrencyLogo from "../../components/CurrencyLogo";
-import { USDT, BONE } from '../../config/tokens'
-import { WWDOGE, ChainId, Currency } from '@boneswapfi/sdk'
+import { USDT, MATE } from '../../config/tokens'
+import { WLAC, ChainId, Currency } from '@mateswapfi/sdk'
 
 interface RoutingCurrencyBoxProps {
   currencyGroup: [string, {percentage: number, exchange: string, currency: string}[]]
@@ -9,9 +9,9 @@ interface RoutingCurrencyBoxProps {
 }
 
 const swapCurrencies = {
-  DOGE: WWDOGE[ChainId.DOGECHAIN],
+  LAC: WLAC[ChainId.LACCHAIN],
   USDT: USDT,
-  BONE: BONE[ChainId.DOGECHAIN],
+  MATE: MATE[ChainId.LACCHAIN],
 }
 
 const RoutingCurrencyBox: FC<RoutingCurrencyBoxProps> = ({ currencyGroup, outputCurrency }) => {

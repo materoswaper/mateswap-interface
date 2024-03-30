@@ -1,31 +1,31 @@
-import { ChainId, BONE_ADDRESS, USDC_ADDRESS, USDT_ADDRESS, BAR_ADDRESS, Token, WWDOGE} from '@boneswapfi/sdk'
+import { ChainId, MATE_ADDRESS, USDC_ADDRESS, USDT_ADDRESS, BAR_ADDRESS, Token, WLAC} from '@mateswapfi/sdk'
 
 type ChainTokenMap = {
   readonly [chainId in ChainId]?: Token
 }
 
-export const BONE: ChainTokenMap = {
-  [ChainId.DOGECHAIN]: new Token(ChainId.DOGECHAIN, BONE_ADDRESS[ChainId.DOGECHAIN], 18, 'BONE', 'BoneToken'),
-  [ChainId.DOGECHAIN_TESTNET]: new Token(ChainId.DOGECHAIN_TESTNET, BONE_ADDRESS[ChainId.DOGECHAIN_TESTNET], 18, 'BONE', 'BoneToken'),
+export const MATE: ChainTokenMap = {
+  [ChainId.LACCHAIN]: new Token(ChainId.LACCHAIN, MATE_ADDRESS[ChainId.LACCHAIN], 18, 'MATE', 'MateToken'),
+  [ChainId.LACCHAIN_TESTNET]: new Token(ChainId.LACCHAIN_TESTNET, MATE_ADDRESS[ChainId.LACCHAIN_TESTNET], 18, 'MATE', 'MateToken'),
 }
 
-export const XBONE: ChainTokenMap = {
-  [ChainId.DOGECHAIN]: new Token(ChainId.DOGECHAIN, BAR_ADDRESS[ChainId.DOGECHAIN], 18, 'xBONE', 'Meat Bone'),
-  [ChainId.DOGECHAIN_TESTNET]: new Token(ChainId.DOGECHAIN_TESTNET, BAR_ADDRESS[ChainId.DOGECHAIN_TESTNET], 18, 'xBONE', 'Meat Bone'),
+export const XMATE: ChainTokenMap = {
+  [ChainId.LACCHAIN]: new Token(ChainId.LACCHAIN, BAR_ADDRESS[ChainId.LACCHAIN], 18, 'xMATE', 'Yerba'),
+  [ChainId.LACCHAIN_TESTNET]: new Token(ChainId.LACCHAIN_TESTNET, BAR_ADDRESS[ChainId.LACCHAIN_TESTNET], 18, 'xMATE', 'Yerba'),
 }
 
 export const USDT: ChainTokenMap = {
-  [ChainId.DOGECHAIN]: new Token(ChainId.DOGECHAIN, USDT_ADDRESS[ChainId.DOGECHAIN], 6, 'USDT', 'USDT token'),
-  [ChainId.DOGECHAIN_TESTNET]: new Token(ChainId.DOGECHAIN_TESTNET, USDT_ADDRESS[ChainId.DOGECHAIN_TESTNET], 6, 'USDT', 'USDT token'),
+  [ChainId.LACCHAIN]: new Token(ChainId.LACCHAIN, USDT_ADDRESS[ChainId.LACCHAIN], 6, 'USDT', 'USDT token'),
+  [ChainId.LACCHAIN_TESTNET]: new Token(ChainId.LACCHAIN_TESTNET, USDT_ADDRESS[ChainId.LACCHAIN_TESTNET], 6, 'USDT', 'USDT token'),
 }
 
 export const USDC: ChainTokenMap = {
-  [ChainId.DOGECHAIN]: new Token(ChainId.DOGECHAIN, USDC_ADDRESS[ChainId.DOGECHAIN], 6, 'USDC', 'USDC token'),
-  [ChainId.DOGECHAIN_TESTNET]: new Token(ChainId.DOGECHAIN_TESTNET, USDC_ADDRESS[ChainId.DOGECHAIN_TESTNET], 6, 'USDC', 'USDC token'),
+  [ChainId.LACCHAIN]: new Token(ChainId.LACCHAIN, USDC_ADDRESS[ChainId.LACCHAIN], 6, 'USDC', 'USDC token'),
+  [ChainId.LACCHAIN_TESTNET]: new Token(ChainId.LACCHAIN_TESTNET, USDC_ADDRESS[ChainId.LACCHAIN_TESTNET], 6, 'USDC', 'USDC token'),
 }
 
-export const WWDOGE_EXTENDED: { [chainId: number]: Token } = {
-  ...WWDOGE,
+export const WLAC_EXTENDED: { [chainId: number]: Token } = {
+  ...WLAC,
 }
 
 type ChainTokenMapList = {
@@ -34,8 +34,8 @@ type ChainTokenMapList = {
 
 // These are available for migrate
 export const YODESWAP_TOKENS: ChainTokenMapList = {
-  [ChainId.DOGECHAIN]: [
+  [ChainId.LACCHAIN]: [
   ],
-  [ChainId.DOGECHAIN_TESTNET]: [
+  [ChainId.LACCHAIN_TESTNET]: [
   ],
 }

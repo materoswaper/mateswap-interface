@@ -1,6 +1,6 @@
 import { classNames, formatNumber, formatPercent } from '../../functions'
 
-import { ZERO } from '@boneswapfi/sdk'
+import { ZERO } from '@mateswapfi/sdk'
 import { Disclosure } from '@headlessui/react'
 import DoubleLogo from '../../components/DoubleLogo'
 import FarmListItemDetails from './FarmListItemDetails'
@@ -85,7 +85,7 @@ const FarmListItem = ({ farm, ...rest }) => {
                         height="30px"
                         className="rounded-md"
                         layout="fixed"
-                        alt="BONE"
+                        alt="MATE"
                       />
                     </div> */}
 
@@ -106,7 +106,7 @@ const FarmListItem = ({ farm, ...rest }) => {
 
                   {/* <div className="flex flex-col space-y-1">
                     <div key="0" className="text-xs md:text-sm">
-                      {formatNumber(pendingSushi.toFixed(18))} BONE
+                      {formatNumber(pendingSushi.toFixed(18))} MATE
                     </div>
                   </div> */}
 

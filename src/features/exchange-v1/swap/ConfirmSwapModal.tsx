@@ -1,4 +1,4 @@
-import { ChainId, Currency, CurrencyAmount, Dogechain, Percent, TradeType, Trade as V2Trade } from '@boneswapfi/sdk'
+import { ChainId, Currency, CurrencyAmount, LaChain, Percent, TradeType, Trade as V2Trade } from '@mateswapfi/sdk'
 import React, { useCallback, useMemo } from 'react'
 import TransactionConfirmationModal, {
   ConfirmationModalContent,
@@ -88,12 +88,12 @@ export default function ConfirmSwapModal({
 
   const pendingText2 = minerBribe
     ? trade?.outputAmount.currency.isNative
-      ? `Minus ${CurrencyAmount.fromRawAmount(Dogechain.onChain(ChainId.DOGECHAIN), minerBribe).toSignificant(
+      ? `Minus ${CurrencyAmount.fromRawAmount(LaChain.onChain(ChainId.LACCHAIN), minerBribe).toSignificant(
           6
-        )} WDOGE Miner Tip`
-      : `Plus ${CurrencyAmount.fromRawAmount(Dogechain.onChain(ChainId.DOGECHAIN), minerBribe).toSignificant(
+        )} LAC Miner Tip`
+      : `Plus ${CurrencyAmount.fromRawAmount(LaChain.onChain(ChainId.LACCHAIN), minerBribe).toSignificant(
           6
-        )} WDOGE Miner Tip`
+        )} LAC Miner Tip`
     : undefined
 
   const confirmationContent = useCallback(
